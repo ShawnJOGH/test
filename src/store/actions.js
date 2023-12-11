@@ -1,0 +1,41 @@
+export default{
+	addCart({commit},goods){
+		commit('addCart',goods)
+	},
+	addDeal({commit},dealmessage){
+		commit('addDeal',dealmessage)
+	},
+	addAddress({commit},e){
+		commit('addAddress',e)
+	},
+	addUser({commit},usermessage){
+		commit('addUser',usermessage)
+	},
+	updataAddress({commit},updataContent){
+		commit('updataAddress',updataContent)
+	},
+	removeCart({commit}){
+		commit('removeCart')
+	},
+	removeDeal({commit},index1){
+		commit('removeDeal',index1)
+	},
+	removeAddress({commit},Deletaddressmes){
+		commit('removeAddress',Deletaddressmes)
+	},
+	inc({commit},goods){
+		commit('inc',goods)
+	},
+	dec({commit},goods){
+		commit('dec',goods)
+	},
+	checkAll({commit},checked){
+		commit('checkAll',checked)
+	},
+	checkOne({commit},goods){
+		commit('checkOne',goods)
+	},
+	setUserInfo(context, user){
+		context.commit("setUserInfo", user)
+	}
+}
